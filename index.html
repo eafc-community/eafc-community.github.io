@@ -303,6 +303,9 @@
     document.querySelectorAll("[data-i18n-html]").forEach(el => { el.innerHTML = T[lang][el.dataset.i18nHtml]; });
     document.querySelectorAll(".langs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
     try { localStorage.setItem("lang", lang); } catch (e) {}
+    const suffix = lang === "fr" ? "" : "-en";
+    document.querySelector('[data-i18n="tos"]').href = "tos" + suffix + ".html";
+    document.querySelector('[data-i18n="privacy"]').href = "privacy" + suffix + ".html";
   }
 
   let initial = "fr";
