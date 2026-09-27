@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EAFC Bots — Discord Pro Clubs</title>
-  <meta name="description" content="EAFC-GM et EAFC-ADMIN : les bots Discord pour gérer ton club Pro Clubs EA Sports FC et organiser tes tournois." />
+  <meta name="description" content="EAFC-GM et EAFC-ADMIN : les bots Discord pour gérer ton club Pro Clubs EA Sports FC et organiser tes tournois, en français, anglais, portugais et espagnol." />
   <meta property="og:title" content="EAFC Bots — EAFC-GM · EAFC-ADMIN" />
   <meta property="og:description" content="Les bots Discord pour les clubs Pro Clubs EA Sports FC : gestion de club, tournois et ligues." />
   <meta property="og:image" content="https://tootankrton.github.io/img/logo-eafc-community.png" />
@@ -84,6 +84,11 @@
       color: var(--a);
     }
     .card > p { color: var(--muted); margin-bottom: 16px; }
+    .langs-pill {
+      display: table; margin: 6px 0 0; padding: 2px 8px;
+      font-size: .72rem; font-weight: 700; letter-spacing: .5px;
+      color: var(--text); border: 1px solid var(--line); border-radius: 999px;
+    }
     .card ul { list-style: none; margin-bottom: 24px; flex: 1; }
     .card li { padding: 6px 0 6px 28px; position: relative; color: var(--text); border-bottom: 1px solid var(--line); }
     .card li:last-child { border-bottom: 0; }
@@ -147,7 +152,7 @@
     <article class="card gm">
       <div class="card-head">
         <img src="img/logo-eafc-gm.png" alt="EAFC-GM" />
-        <div><h2>EAFC-GM</h2><span class="tag" data-i18n="gm.tag">Gestion de club</span></div>
+        <div><h2>EAFC-GM</h2><span class="tag" data-i18n="gm.tag">Gestion de club</span><span class="langs-pill">FR · EN · PT · ES</span></div>
       </div>
       <p data-i18n="gm.text">Tout ce dont un GM a besoin pour faire tourner son club Pro Clubs.</p>
       <ul>
@@ -156,6 +161,7 @@
         <li data-i18n="gm.f3">Statistiques EA des matchs et des joueurs</li>
         <li data-i18n="gm.f4">MVP, sanctions, sondages, règlement et tactique</li>
         <li data-i18n="gm.f5">Accueil et présentation des nouveaux joueurs</li>
+        <li data-i18n="langs">En français, anglais, portugais et espagnol, commandes comprises</li>
       </ul>
       <p class="trial" data-i18n-html="trial"><b>14 jours d'essai gratuit</b>, sans engagement.</p>
       <a class="btn" href="https://dsc.gg/eafc-gm" target="_blank" rel="noopener" data-i18n="add">Ajouter à Discord</a>
@@ -164,7 +170,7 @@
     <article class="card admin">
       <div class="card-head">
         <img src="img/logo-eafc-admin.png" alt="EAFC-ADMIN" />
-        <div><h2>EAFC-ADMIN</h2><span class="tag" data-i18n="admin.tag">Tournois et ligues</span></div>
+        <div><h2>EAFC-ADMIN</h2><span class="tag" data-i18n="admin.tag">Tournois et ligues</span><span class="langs-pill">FR · EN · PT · ES</span></div>
       </div>
       <p data-i18n="admin.text">Organise tes compétitions Pro Clubs de A à Z, résultats compris.</p>
       <ul>
@@ -173,6 +179,7 @@
         <li data-i18n="admin.f3">Inscription des clubs vérifiés sur EA</li>
         <li data-i18n="admin.f4">Calendrier généré automatiquement</li>
         <li data-i18n="admin.f5">Résultats récupérés sur EA, validés par les GM, classements en direct</li>
+        <li data-i18n="langs">En français, anglais, portugais et espagnol, commandes comprises</li>
       </ul>
       <p class="trial" data-i18n-html="trial"><b>14 jours d'essai gratuit</b>, sans engagement.</p>
       <a class="btn" href="https://dsc.gg/eafc-admin" target="_blank" rel="noopener" data-i18n="add">Ajouter à Discord</a>
@@ -217,6 +224,7 @@
       "admin.f5": "Résultats récupérés sur EA, validés par les GM, classements en direct",
       "trial": "<b>14 jours d'essai gratuit</b>, sans engagement.",
       "add": "Ajouter à Discord",
+      "langs": "En français, anglais, portugais et espagnol, commandes comprises",
       "com.text": "Le serveur d'aide et d'annonces des deux bots : tutos, nouveautés et entraide. Écris dans ta langue, les messages sont traduits automatiquement.",
       "com.join": "Rejoindre le serveur",
       "tos": "Conditions d'utilisation",
@@ -241,6 +249,7 @@
       "admin.f5": "Results fetched from EA, confirmed by the GMs, live standings",
       "trial": "<b>14-day free trial</b>, no commitment.",
       "add": "Add to Discord",
+      "langs": "In French, English, Portuguese and Spanish, commands included",
       "com.text": "The help and news server for both bots: tutorials, updates and support. Write in your language, messages are translated automatically.",
       "com.join": "Join the server",
       "tos": "Terms of use",
@@ -265,6 +274,7 @@
       "admin.f5": "Resultados obtidos da EA, confirmados pelos GM, classificações em direto",
       "trial": "<b>14 dias de teste grátis</b>, sem compromisso.",
       "add": "Adicionar ao Discord",
+      "langs": "Em francês, inglês, português e espanhol, comandos incluídos",
       "com.text": "O servidor de ajuda e novidades dos dois bots: tutoriais, atualizações e entreajuda. Escreve no teu idioma, as mensagens são traduzidas automaticamente.",
       "com.join": "Entrar no servidor",
       "tos": "Termos de utilização",
@@ -289,6 +299,7 @@
       "admin.f5": "Resultados obtenidos de EA, confirmados por los GM, clasificaciones en directo",
       "trial": "<b>14 días de prueba gratis</b>, sin compromiso.",
       "add": "Añadir a Discord",
+      "langs": "En francés, inglés, portugués y español, comandos incluidos",
       "com.text": "El servidor de ayuda y novedades de los dos bots: tutoriales, novedades y ayuda mutua. Escribe en tu idioma, los mensajes se traducen automáticamente.",
       "com.join": "Unirse al servidor",
       "tos": "Condiciones de uso",
